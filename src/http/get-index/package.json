@@ -1,0 +1,9 @@
+{
+  "name": "testprox-get-index",
+  "dependencies": {
+    "@architect/data": "^2.0.14",
+    "@architect/functions": "^2.0.5",
+    "@architect/proxy-plugin-jsx": "^1.0.0",
+    "@architect/proxy-plugin-mjs-urls": "^1.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+<p>hi from html</p>
+<script type=module>
+let scripts = [
+  'vendor/preact.mjs',
+  'app.jsx',
+  'index.mjs',
+  'log.mjs'
+]
+let testing = window.location.protocol === 'http:'
+let path = window.location.pathname
+let env = path.startsWith('/staging')? '/staging' : '/production'
+scripts.forEach(src=> {
+  let script = document.createElement('script')
+  script.type = 'module'
+  script.src = `${testing? '' : env}/${src}`
+  document.body.appendChild(script)
+})
+</script>
+</body>
+</html>
