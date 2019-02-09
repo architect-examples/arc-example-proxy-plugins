@@ -4,6 +4,9 @@
     "@architect/data": "^2.0.14",
     "@architect/functions": "^2.0.5",
     "@architect/proxy-plugin-jsx": "^1.0.0",
-    "@architect/proxy-plugin-mjs-urls": "^1.0.1"
+    "@architect/proxy-plugin-md": "^1.0.0",
+    "@architect/proxy-plugin-mjs-urls": "^1.0.1",
+    "@architect/proxy-plugin-sass": "^1.0.0",
+    "@architect/proxy-plugin-tsx": "^1.0.0"
   }
 }
