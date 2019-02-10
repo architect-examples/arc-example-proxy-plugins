@@ -1,27 +1,13 @@
 <!doctype html>
 <html>
-<link rel=stylesheet href=/staging/style.scss type=text/css charset=utf-8>
-<link rel=stylesheet href=/production/style.scss type=text/css charset=utf-8>
 <link rel=stylesheet href=/css type=text/css charset=utf-8>
 <body>
-  <p>hi from html <a href=home.md>View markdown page</a></p>
-<script type=module>
-let scripts = [
-  'vendor/preact.mjs',
-  'app.jsx',
-  'index.mjs',
-  'log.mjs',
-  'wat.tsx'
-]
-let testing = window.location.protocol === 'http:'
-let path = window.location.pathname
-let env = path.startsWith('/staging')? '/staging' : '/production'
-scripts.forEach(src=> {
-  let script = document.createElement('script')
-  script.type = 'module'
-  script.src = `${testing? '' : env}/${src}`
-  document.body.appendChild(script)
-})
-</script>
+<p>hi from html <a href=/home.md>View markdown page</a></p>
+
+<script type=module src=/vendor/preact.mjs></script>
+<script type=module src=/app.jsx></script>
+<script type=module src=/index.mjs></script>
+<script type=module src=/log.mjs></script>
+<script type=module src=/wat.tsx></script>
 </body>
 </html>
