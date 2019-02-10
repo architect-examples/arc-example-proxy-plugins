@@ -1,5 +1,5 @@
-import log from '/log.mjs'
+import log from 'log'
 import wat from '/wat.tsx'
 
 log('hi from module')
-log(wat)
+log(wat.toString())
