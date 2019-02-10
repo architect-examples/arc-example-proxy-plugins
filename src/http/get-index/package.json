@@ -2,7 +2,7 @@
   "name": "testprox-get-index",
   "dependencies": {
     "@architect/data": "^2.0.14",
-    "@architect/functions": "^2.0.6",
+    "@architect/functions": "^2.0.7",
     "@architect/proxy-plugin-bare-imports": "^1.0.0",
     "@architect/proxy-plugin-jsx": "^1.0.0",
     "@architect/proxy-plugin-md": "^1.0.0",

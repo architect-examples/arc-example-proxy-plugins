@@ -5,6 +5,17 @@ exports.handler = arc.proxy.public({
   // force index.html on any folder depth
   spa: true,
 
+  // ssr
+  //ssr: './ssr',
+  ssr: '@architect/shared/ssr',
+  /*
+  async ssr(req, config) {
+    let {headers, body} = await proxy.read('index.html', config)
+    let ts = new Date(Date.now()).toISOString()
+    body = body.replace('</body>', `<code>inline rendered ${ts}</code><br></body>`)
+    return {headers, body} 
+  },*/
+
   // plugins act in order on file types
   plugins: {
     jsx: [
